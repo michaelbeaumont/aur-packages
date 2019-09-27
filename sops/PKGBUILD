@@ -19,6 +19,7 @@ prepare() {
 
 build() {
   cd src/go.mozilla.org/sops
+  make vendor
   env GOPATH="${srcdir}" go build \
     -asmflags all="-trimpath=${PWD}" \
     -gcflags all="-trimpath=${PWD}" \
