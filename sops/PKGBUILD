@@ -28,7 +28,7 @@ build() {
 
 check() {
   cd src/go.mozilla.org/sops
-  env GOPATH="${srcdir}" go test
+  env GO111MODULE=on GOPATH="${srcdir}" go test
 }
 
 package() {
