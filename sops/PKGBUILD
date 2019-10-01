@@ -19,7 +19,7 @@ prepare() {
 
 build() {
   cd src/go.mozilla.org/sops
-  env GOPATH="${srcdir}" go build \
+  env GO111MODULE=on GOPATH="${srcdir}" go build \
     -asmflags all="-trimpath=${PWD}" \
     -gcflags all="-trimpath=${PWD}" \
     -ldflags all="-extldflags=${LDFLAGS}" \
