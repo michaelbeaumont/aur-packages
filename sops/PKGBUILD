@@ -15,6 +15,7 @@ sha256sums=('bb6611eb70580ff74a258aa8b9713fdcb9a28de5a20ee716fe6b516608a60237')
 
 build() {
   cd "${pkgname}-${pkgver}"
+  export GOPATH="$srcdir"/gopath
   export CGO_LDFLAGS="$LDFLAGS"
   export GOFLAGS='-buildmode=pie -modcacherw -trimpath'
   go build -o "$pkgname" ./cmd/sops/
