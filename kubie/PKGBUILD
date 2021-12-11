@@ -1,7 +1,7 @@
 # Maintainer: Michael Beaumont <mjboamail@gmail.com>
 _pkgname=kubie
 pkgname=${_pkgname}-bin
-pkgver=0.13.2
+pkgver=0.16.0
 pkgrel=1
 pkgdesc="A more powerful alternative to kubectx and kubens"
 arch=('x86_64')
@@ -16,8 +16,8 @@ source=(
   "LICENSE::https://raw.githubusercontent.com/${_repo}/v${pkgver}/LICENSE"
 )
 sha512sums=(
-  'd9b9ed12fd62b9b1717513d110a2f592bbe57b78ee1f58bb6684906ff369361f65550670fdc555e67956f5be9b4c20acd2a86311874968466e8e1e2bdccaed4e'
-  'ed0127772b0bb063e072dec3d6fe204b396eb6f6d42bfa10e8e169baaa21dbcb7247a21f550b49b3f3e4081f147f16d7122aa5dcca19561f27db3901b208654d'
+  'b4cc92a36a86b229df61c3be6a14f570a3fdebdc1603bf996d9e21814297a08365fc5c8f7d47305a355edf778f80be84fd974e2c2b16008fe44123fcc5114a92'
+  '2e932767e4c016c9e2222d2e24f0e3eb3b0d398fb5f0d60dd3287433d55787d33d7423beb7fb3fb5a44ac41e899627419d1f1b263ad587c8bf54532bb0ad6bb2'
   '63c6f25e01c94602e2d986549154d91d14c957d3e99e16e955bc79f53b97805d973185f73c86004c201f56418e47228538fdcd039fbc8a586cdf761236e14fde'
 )
 
